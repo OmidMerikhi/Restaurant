@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="restaurant-client-service" />
+        <module name="customer-service" />
         <module name="staff-service" />
         <module name="financial-service" />
         <module name="food-service" />
-        <module name="restaurant-client-service" />
-        <module name="customer-service" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
       <module name="customer-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="financial-service" options="-parameters" />
       <module name="food-service" options="-parameters" />
       <module name="order" options="-parameters" />
