@@ -9,11 +9,19 @@
         <option value="$PROJECT_DIR$/staff/pom.xml" />
         <option value="$PROJECT_DIR$/financial/pom.xml" />
         <option value="$PROJECT_DIR$/order/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/restaurant-client/pom.xml" />
+        <option value="$PROJECT_DIR$/restaurant-client-service/pom.xml" />
+        <option value="$PROJECT_DIR$/food-service/pom.xml" />
+        <option value="$PROJECT_DIR$/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/staff-service/pom.xml" />
+        <option value="$PROJECT_DIR$/financial-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/order/pom.xml" />
+        <option value="$PROJECT_DIR$/restaurant-client/pom.xml" />
       </set>
     </option>
   </component>

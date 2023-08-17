@@ -2,27 +2,34 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="staff" />
-        <module name="food" />
-        <module name="financial" />
-        <module name="customer" />
+        <module name="config-server" />
+        <module name="staff-service" />
+        <module name="financial-service" />
+        <module name="food-service" />
+        <module name="restaurant-client-service" />
+        <module name="customer-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="order" target="17" />
+      <module name="restaurant-client" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="customer" options="-parameters" />
-      <module name="financial" options="-parameters" />
-      <module name="food" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="financial-service" options="-parameters" />
+      <module name="food-service" options="-parameters" />
       <module name="order" options="-parameters" />
-      <module name="staff" options="-parameters" />
+      <module name="restaurant-client" options="-parameters" />
+      <module name="restaurant-client-service" options="-parameters" />
+      <module name="staff-service" options="-parameters" />
     </option>
   </component>
 </project>
