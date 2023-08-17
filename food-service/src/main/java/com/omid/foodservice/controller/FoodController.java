@@ -1,6 +1,7 @@
 package com.omid.foodservice.controller;
 
 import com.omid.foodservice.data.entity.Food;
+import com.omid.foodservice.data.entity.FoodType;
 import com.omid.foodservice.data.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -34,6 +35,11 @@ public class FoodController {
     @GetMapping("/search/{value}")
     public List<Food> search(@PathVariable String value){
         return foodService.searchFood(value);
+    }
+
+    @GetMapping("/byFoodType/{type}")
+    public List<Food> getByType(@PathVariable("type") FoodType foodType){
+        return foodService.getByFoodType(foodType);
     }
 
 

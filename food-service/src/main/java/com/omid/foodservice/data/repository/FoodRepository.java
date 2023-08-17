@@ -1,6 +1,7 @@
 package com.omid.foodservice.data.repository;
 
 import com.omid.foodservice.data.entity.Food;
+import com.omid.foodservice.data.entity.FoodType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -13,4 +14,6 @@ public interface FoodRepository extends JpaRepository<Food,Integer> {
     Food getFoodById(Integer id);
     @Query("from Food f where f.name like :value or f.description like :value")
     List<Food> searchFood(@Param("value") String value);
+
+    List<Food> findByFoodType(FoodType foodType);
 }

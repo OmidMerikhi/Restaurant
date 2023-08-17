@@ -1,6 +1,7 @@
 package com.omid.foodservice.data.service;
 
 import com.omid.foodservice.data.entity.Food;
+import com.omid.foodservice.data.entity.FoodType;
 import com.omid.foodservice.data.repository.FoodRepository;
 import org.apache.catalina.LifecycleState;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +49,10 @@ public class FoodService {
 
     public List<Food> searchFood(String value){
         return foodRepository.searchFood("%"+value+"%");
+    }
+
+    public List<Food> getByFoodType(FoodType foodType){
+        return foodRepository.findByFoodType(foodType);
     }
 
 
