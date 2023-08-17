@@ -12,12 +12,16 @@
         <module name="customer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="customer" options="-parameters" />
       <module name="financial" options="-parameters" />
       <module name="food" options="-parameters" />
+      <module name="order" options="-parameters" />
       <module name="staff" options="-parameters" />
     </option>
   </component>
