@@ -6,6 +6,7 @@ CREATE TABLE `food`
      description VARCHAR(500),
      price INT);
 
+
 #------------ INSERT FOOD DATA --------------
 INSERT INTO `restaurant`.`food`
 (name,food_group,description,price)
@@ -29,7 +30,7 @@ VALUES ('کوبیده','IRANI','---',650000),
        ('آب معدنی کوچک','IRANI','---',50000),
        ('ترشی','IRANI','---',150000);
 
-#----------------- CREATE RAW MATERIAL TABLE --------------------
++#----------------- CREATE RAW MATERIAL TABLE --------------------
 CREATE TABLE `raw_material`
 (id INT PRIMARY KEY AUTO_INCREMENT,
  name NVARCHAR(200),
